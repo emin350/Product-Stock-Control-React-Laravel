@@ -1,13 +1,25 @@
 import React from 'react'
 import { inject, observer } from 'mobx-react';
+import Layout from '../../Components/Layout/front.layout';
+
+
 
 const Index = (props) => {
 
   props.AuthStore.getToken();
-console.log(props.AuthStore.appState);
+const logout = () => {
+  props.AuthStore.removeToken();
+  props.history.push("/login");
+}
 
-  return <div>hhhindex</div>
-
+return (
+    <Layout>
+      <div>
+        index
+        <div>   <button onClick={logout}>Çıkış</button>  </div>
+      </div>
+    </Layout>
+  )
 };
 
 export default inject("AuthStore")(observer(Index));

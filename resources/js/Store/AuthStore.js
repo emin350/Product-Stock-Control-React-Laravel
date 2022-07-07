@@ -41,6 +41,12 @@ class AuthStore {
             console.log(e)
         }
     }
+
+    removeToken = () => {
+        localStorage.removeItem("appState");
+        this.appState = null;
+    }
+
 }
 
 export default new AuthStore();

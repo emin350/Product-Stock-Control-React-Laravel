@@ -93,7 +93,7 @@ const Register = (props) => {
   return (
     <div className="login-register-container" >
       <form class="form-signin">
-        <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72" />
+        <img class="mb-4" src="https://cdn.wallpapersafari.com/23/88/QrUxBF.png" alt="" width="150" height="150" />
         <h1 class="h3 mb-3 font-weight-normal">Hemen Kayıt Ol</h1>
 
         {arr.length != 0 && arr.map((item) => (<p>{item}</p>))}
